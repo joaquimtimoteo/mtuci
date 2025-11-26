@@ -2,6 +2,13 @@
 
 Complete production-ready infrastructure setup running on Fly.io with Docker, Nginx, Python, and Tigris Storage.
 
+
+<img width="1680" height="928" alt="Captura de Tela 2025-11-27 às 2 08 31 AM" src="https://github.com/user-attachments/assets/5d91c751-ddf3-4079-ba0f-a75e38e16b63" />
+
+
+<img width="552" height="409" alt="Captura de Tela 2025-11-26 às 11 34 18 PM" src="https://github.com/user-attachments/assets/e4a81f0c-e8d6-4d6c-8636-be349d25ed44" />
+
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Fly.io-purple.svg)
 ![Docker](https://img.shields.io/badge/docker-enabled-blue.svg)

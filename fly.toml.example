@@ -1,0 +1,10 @@
+app = 'your-app-name'
+primary_region = 'ams'
+
+[build]
+  image = "ubuntu:22.04"
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

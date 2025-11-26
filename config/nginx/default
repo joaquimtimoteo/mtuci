@@ -1,0 +1,30 @@
+server {
+    listen 8080 default_server;
+    server_name _;
+
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+
+    location / {
+        return 200 '{"status":"online","server":"nginx","vm":"fly.io"}';
+        add_header Content-Type application/json;
+    }
+
+    location /status {
+        stub_status on;
+        access_log off;
+    }
+
+    location /docker-app/ {
+        proxy_pass http://localhost:9090/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:5000/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

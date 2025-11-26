@@ -27,7 +27,7 @@ Complete production-ready infrastructure setup running on Fly.io with Docker, Ng
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/flyio-microvm.git
+git clone https://github.com/joaquimtimoteo/flyio-microvm.git
 cd flyio-microvm
 ```
 

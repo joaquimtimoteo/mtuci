@@ -1,4 +1,4 @@
-#  Fly.io MicroVM Infrastructure
+#  MicroVM Infrastructure
 
 Complete production-ready infrastructure setup running on Fly.io with Docker, Nginx, Python, and Tigris Storage.
 

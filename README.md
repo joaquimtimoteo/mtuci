@@ -1,4 +1,4 @@
-# 🚀 Fly.io MicroVM Infrastructure
+#  Fly.io MicroVM Infrastructure
 
 Complete production-ready infrastructure setup running on Fly.io with Docker, Nginx, Python, and Tigris Storage.
 
@@ -6,7 +6,7 @@ Complete production-ready infrastructure setup running on Fly.io with Docker, Ng
 ![Platform](https://img.shields.io/badge/platform-Fly.io-purple.svg)
 ![Docker](https://img.shields.io/badge/docker-enabled-blue.svg)
 
-## 🎯 Features
+##  Features
 
 - ✅ **Fly.io MicroVM** - Ubuntu 22.04 on Firecracker
 - ✅ **Docker** - Full container support with VFS driver
@@ -17,7 +17,7 @@ Complete production-ready infrastructure setup running on Fly.io with Docker, Ng
 - ✅ **Redis** - Caching layer
 - ✅ **Node.js** - API runtime
 
-## 📋 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -67,7 +67,7 @@ service nginx start
 ./startup.sh
 ```
 
-## 🏗️ Architecture
+##  Architecture
 ```
 ┌─────────────────────────────────────────────┐
 │          Fly.io MicroVM (Amsterdam)         │
@@ -90,7 +90,7 @@ service nginx start
 └─────────────────────────────────────────────┘
 ```
 
-## 📚 Documentation
+##  Documentation
 
 - [Complete Setup Guide](docs/COMPLETE_SETUP.md)
 - [API Development](docs/API_GUIDE.md)
@@ -135,7 +135,7 @@ docker compose logs -f
 tail -f /var/log/nginx/access.log
 ```
 
-## 🐳 Docker Services
+##  Docker Services
 
 Manage services with Docker Compose:
 ```bash
@@ -152,7 +152,7 @@ docker compose ps
 docker compose logs -f
 ```
 
-## 📊 Monitoring
+##  Monitoring
 ```bash
 # System resources
 htop
@@ -164,14 +164,14 @@ docker stats
 curl http://localhost:8080/status
 ```
 
-## 🔒 Security
+##  Security
 
 - Change default passwords in `docker-compose.yml`
 - Protect credentials: `chmod 600 ~/.aws/credentials`
 - Use Fly secrets for sensitive data
 - Enable firewall rules in Fly.io dashboard
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please:
 
@@ -180,17 +180,17 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Submit a pull request
 
-## 📝 License
+##  License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+##  Support
 
 - [Fly.io Documentation](https://fly.io/docs/)
 - [Tigris Documentation](https://www.tigrisdata.com/docs/)
-- [Issues](https://github.com/YOUR-USERNAME/flyio-microvm/issues)
+- [Issues](https://github.com/joaquimtimoteo/flyio-microvm/issues)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Fly.io for excellent microVM infrastructure
 - Tigris for zero-egress object storage

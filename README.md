@@ -17,13 +17,15 @@ Complete production-ready infrastructure setup running on Fly.io with Docker, Ng
 
 ## Terminal 1 — Create the tunnel:
 
+```bash
 fly proxy 2222:2222 -a my-python-vm
+```
 
 ## Terminal 2 — Connect through the tunnel:
 
+```bash
 ssh student@localhost -p 2222
-
-
+```
 
 
 ##  Features

@@ -1,0 +1,58 @@
+# No Mac, conectar como root
+
+fly ssh console -a minha-vm-python
+
+
+# Conectar  como student
+ssh student@localhost -p 2222
+
+my-status
+my-help
+
+passwd
+# Senha atual: student1234
+# Nova senha: [escolha uma nova]
+
+
+# Verificar versão do Python
+python3 --version
+
+# Verificar pip
+pip3 --version
+
+# Ver pacotes Python instalados
+pip3 list
+
+# Criar ambiente virtual
+cd /app
+python3 -m venv meu_ambiente
+
+# Ativar ambiente
+source meu_ambiente/bin/activate
+
+# Instalar alguns pacotes
+pip install requests flask
+
+# Ver pacotes instalados
+pip list
+
+# Criar script Python de teste
+cat > /app/teste.py << 'EOF'
+import sys
+import requests
+from datetime import datetime
+
+print("🐍 Python funcionando!")
+print(f"Versão: {sys.version}")
+print(f"Data/Hora: {datetime.now()}")
+
+# Testar requests
+try:
+    response = requests.get("https://api.github.com")
+    print(f"\n✅ Internet: OK (Status: {response.status_code})")
+except Exception as e:
+    print(f"❌ Erro: {e}")
+EOF
+
+# Executar o script
+python teste.py

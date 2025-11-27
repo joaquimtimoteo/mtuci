@@ -1,3 +1,12 @@
+Use o proxy do Fly para criar um túnel:
+
+# Terminal 1 - Criar túnel
+fly proxy 2222:2222 -a minha-vm-python
+
+
+# Terminal 2 - Conectar via túnel
+ssh student@localhost -p 2222
+
 # No Mac, conectar como root
 
 fly ssh console -a minha-vm-python

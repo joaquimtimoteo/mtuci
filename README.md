@@ -13,6 +13,19 @@ Complete production-ready infrastructure setup running on Fly.io with Docker, Ng
 ![Platform](https://img.shields.io/badge/platform-Fly.io-purple.svg)
 ![Docker](https://img.shields.io/badge/docker-enabled-blue.svg)
 
+
+
+## Terminal 1 — Create the tunnel:
+
+fly proxy 2222:2222 -a my-python-vm
+
+## Terminal 2 — Connect through the tunnel:
+
+ssh student@localhost -p 2222
+
+
+
+
 ##  Features
 
 - ✅ **Fly.io MicroVM** - Ubuntu 22.04 on Firecracker

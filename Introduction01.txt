@@ -21,6 +21,10 @@ ollama pull qwen2:0.5b
 # Validar
 ollama run qwen2:0.5b
 
+- Nosso modelo [https://konekt-o81y.vercel.app/]
+
+ACCESS_CODE = 'KONEKT2025'
+
 -------------------
 import ollama
 
